@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body class="bg-gradient-to-r from-white via-blue-100 to-cyan-100">
+    <!-- Navbar -->
+    <nav class="navbar sticky top-0 z-50 bg-white/10 backdrop-blur-md">
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <!-- Logo -->
+        <div class="text-xl font-bold">
+          <a href="#"
+            ><button class="bg-white/70 shadow-lg py-1 px-4 rounded-full">
+              <img src="assets/404.svg" class="size-5" alt="" /></button
+          ></a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Links -->
+        <div
+          id="menu-links"
+          class="hidden md:flex space-x-8 bg-white/20 backdrop-blur-md shadow-lg px-8 py-2 rounded-full"
+        >
+          <a
+            href="#"
+            class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
+            >Home</a
+          >
+          <a
+            href="#features"
+            class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
+            >Features</a
+          >
+          <a
+            href="#service"
+            class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
+            >Services</a
+          >
+          <a
+            href="#about"
+            class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
+            >Contact</a
+          >
+        </div>
+
+        <div class="hidden md:flex">
+          <button
+            class="flex justify-center bg-orange-300 px-4 py-1 border-2 border-orange-400 rounded-full font-semibold shadow-md hover:bg-orange-200 hover:border-orange-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+              />
+            </svg>
+            Login
+          </button>
+        </div>
+      </div>
+
+      <!-- Dropdown Menu (Mobile) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden backdrop-blur-md overflow-hidden transition-all duration-300 ease-in-out"
+      >
+        <a
+          href="#"
+          class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
+          >About</a
+        >
+        <a
+          href="#service"
+          class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
+          >Services</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
+          >Contact</a
+        >
+        <a
+          class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
+        >
+          <button class="">Login</button>
+        </a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero -->
+    <div class="hero-section flex mx-auto max-w-screen-2xl px-4 pt-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="col-span-1 place-content-center order-last sm:order-first">
+          <h2 class="font-extrabold sm:text-2xl text-4xl py-8 sm:py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            blanditiis!
+          </h2>
+          <p class="font-semibold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            eveniet laboriosam ab, sunt adipisci ea.
+          </p>
+          <div class="py-4">
+            <button
+              class="flex justify-center bg-orange-300 px-4 py-1 border-2 border-orange-400 rounded-md font-semibold shadow-md hover:bg-orange-200 hover:border-orange-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <img class="" src="assets/ilustrasi2.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Features -->
+    <div
+      id="features"
+      class="card-content px-4 bg-gradient-to-r from-red-500 via-amber-500 to-orange-700 pb-28"
+    >
+      <h2 class="text-center pt-20 sm:pb-16 font-bold text-2xl text-white">
+        Lorem ipsum dolor, adipisicing.
+      </h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-5 p-16 sm:p-5 lg:px-23 xl:px-60 lg:gap-14"
+      >
+        <div class="grid grid-cols-1 place-items-center">
+          <div class="col-span-1">
+            <img src="assets/photo.svg" alt="" class="aspect-square size-60" />
+          </div>
+          <div class="col-span-1 bg-slate-300/20 p-4 rounded-md">
+            <p class="text-white font-semibold text-lg">
+              2. Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 place-items-center">
+          <div class="col-span-1">
+            <img src="assets/cloud.svg" alt="" class="aspect-square size-60" />
+          </div>
+          <div class="col-span-1 bg-slate-300/20 p-4 rounded-md">
+            <p class="text-white font-semibold text-lg">
+              2. Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 place-items-center">
+          <div class="col-span-1">
+            <img src="assets/games.svg" alt="" class="aspect-square size-60" />
+          </div>
+          <div class="col-span-1 bg-slate-300/20 p-4 rounded-md">
+            <p class="text-white font-semibold text-lg">
+              2. Lorem ipsum dolor sit amet
+            </p>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Testimonials -->
+    <div
+      id=""
+      class="size-[80%] xl:size-[65%] mx-auto -mt-36 sm:-mt-28 md:-mt-16 xl:-mt-20"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 bg-white p-4 gap-4 rounded-lg"
+      >
+        <div class="grid grid-cols-3">
+          <div class="col-span-1 flex justify-center items-center">
+            <img
+              src="assets/ilustrasi2.svg"
+              alt=""
+              class="aspect-square size-20 lg:size-28"
+            />
+          </div>
+          <div class="col-span-2 pl-2 place-content-center">
+            <p class="text-red-500 font-semibold text-lg">123123</p>
+            <p class="text-slate-700">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3">
+          <div class="col-span-1 flex justify-center items-center">
+            <img
+              src="assets/posts.svg"
+              alt=""
+              class="aspect-square size-20 lg:size-28"
+            />
+          </div>
+          <div class="col-span-2 pl-2 place-content-center">
+            <p class="text-red-500 font-semibold text-lg">123123</p>
+            <p class="text-slate-700">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3">
+          <div class="col-span-1 flex justify-center items-center">
+            <img
+              src="assets/reading.svg"
+              alt=""
+              class="aspect-square size-20 lg:size-28"
+            />
+          </div>
+          <div class="col-span-2 pl-2 place-content-center">
+            <p class="text-red-500 font-semibold text-lg">123123</p>
+            <p class="text-slate-700">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Service -->
+    <div id="service" class="p-16">
+      <h2 class="text-center pb-12 font-bold text-2xl text-black">
+        Lorem ipsum dolor, adipisicing.
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/test.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/cloud.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/content.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/games.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/photo.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-col-1 border-4 py-8 px-6">
+          <div class="col-span-1 pb-4">
+            <img src="assets/posts.svg" alt="" class="size-12" />
+          </div>
+          <div class="col-span-1">
+            <p class="font-bold pb-2">lorem2</p>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quod quisquam asperiores dolorem maiores? Sit totam aperiam illum
+              quidem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Service -->
+
+    <!-- About -->
+    <div class="-mb-6 xl:-mb-24">
+      <img src="assets/wave2.svg" alt="" />
+    </div>
+    <div id="about" class="mb-10 bg-orange-400">
+      <div class="size-[80%] md:size-[60%] mx-auto pb-16">
+        <h2
+          class="text-center pt-20 sm:pb-5 font-bold text-2xl lg:text-3xl text-black"
+        >
+          Lorem ipsum dolor, adipisicing?
+        </h2>
+        <div class="text-center">
+          <p class="font-semibold text-white md:text-xl p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime
+            commodi illo perferendis natus? Harum, numquam nihil quam dolores
+            aliquam quas pariatur optio? Obcaecati beatae dolorem magnam fugit
+            totam dolore?
+          </p>
+          <div class="flex mx-auto justify-center">
+            <img
+              src="assets/games.svg"
+              alt=""
+              class="size-[60%] lg:size-[30%]"
+            />
+          </div>
+          <p class="font-semibold text-white md:text-xl p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime
+            commodi illo perferendis natus? Harum, numquam nihil quam dolores
+            aliquam quas pariatur optio? Obcaecati beatae dolorem magnam fugit
+            totam dolore?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="-mt-14 xl:-mt-24">
+      <img src="assets/wave3.svg" alt="" />
+    </div>
+    <!-- About -->
+
+    <!-- FAQ -->
+    <div id="FAQ" class="size-[80%] xl:size-[40%] mx-auto pb-10">
+      <h2 class="text-center pb-10 font-bold text-2xl">
+        Frequently Asking Questions (FAQ)
+      </h2>
+      <!-- Accordion 1 -->
+      <div class="p-2">
+        <button
+          class="w-full flex rounded-t-lg justify-between items-center py-4 px-6 bg-orange-200 text-gray-800 font-medium text-left focus:outline-none"
+          onclick="toggleAccordion(this)"
+        >
+          <span>Lorem ipsum dolor sit?</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition-transform transform rotate-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-orange-200/40 rounded-b-lg">
+          <p class="text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+            fugiat laboriosam deleniti provident consectetur temporibus corrupti
+            quidem dolorum autem quas voluptatibus, iure ea voluptatem totam
+            voluptas ab quisquam eos sit.
+          </p>
+        </div>
+      </div>
+      <!-- Accordion 2 -->
+      <div class="p-2">
+        <button
+          class="w-full flex rounded-t-lg justify-between items-center py-4 px-6 bg-orange-200 text-gray-800 font-medium text-left focus:outline-none"
+          onclick="toggleAccordion(this)"
+        >
+          <span>Lorem ipsum dolor sit?</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition-transform transform rotate-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-orange-200/40 rounded-b-lg">
+          <p class="text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+            fugiat laboriosam deleniti provident consectetur temporibus corrupti
+            quidem dolorum autem quas voluptatibus, iure ea voluptatem totam
+            voluptas ab quisquam eos sit.
+          </p>
+        </div>
+      </div>
+      <!-- Accordion 2 -->
+      <div class="p-2">
+        <button
+          class="w-full flex rounded-t-lg justify-between items-center py-4 px-6 bg-orange-200 text-gray-800 font-medium text-left focus:outline-none"
+          onclick="toggleAccordion(this)"
+        >
+          <span>Lorem ipsum dolor sit?</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 transition-transform transform rotate-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-orange-200/40 rounded-b-lg">
+          <p class="text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+            fugiat laboriosam deleniti provident consectetur temporibus corrupti
+            quidem dolorum autem quas voluptatibus, iure ea voluptatem totam
+            voluptas ab quisquam eos sit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ -->
+
+    <!-- footer -->
+    <div class="-mb-5 lg:-mb-28 xl:-mb-36">
+      <img src="assets/wave.svg" alt="" />
+    </div>
+    <footer id="contact">
+      <div class="w-full bg-orange-400">
+        <div class="grid grid-cols-1 max-w-screen-lg mx-auto p-8">
+          <div class="grid grid-cols-2 sm:grid-cols-3 sm:justify-items-center">
+            <div class="col-span-2 sm:col-span-3 flex mb-8">
+              <a href="">
+                <img src="assets/404.svg" alt="logo" class="size-20"
+              /></a>
+            </div>
+            <div class="col-span-1">
+              <p class="text-xl font-bold text-white mb-2 underline">Contact</p>
+              <ul>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Email</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Whatsapp</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Telegram</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white mb-2 underline">
+                Information
+              </p>
+              <ul class="">
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Privacy</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Terms of us</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Policy</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <p class="text-xl font-bold text-white mb-2 underline">
+                Sosial Media
+              </p>
+              <ul class="">
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >X</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    href=""
+                    class="text-base font-bold text-white hover:underline hover:decoration-orange-700 hover:decoration-4"
+                    >Tiktok</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="pb-4" />
+        <div class="text-center">
+          <a class="text-center text-xl font-semibold text-white" href=""
+            >PT 404 Indonesia 2025</a
+          >
+        </div>
+        <div class="py-4">
+          <p class="text-center text-sm font-semibold text-white">
+            © Copyright 2025 | 404 Indonesia | All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="src/JS/script.js"></script>
+  </body>
+</html>
