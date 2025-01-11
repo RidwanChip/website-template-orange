@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
       scroll-behavior: smooth;
     }
   </style>
+  <title>Web Template</title>
   <body class="bg-gradient-to-r from-white via-blue-100 to-cyan-100">
     <!-- Navbar -->
     <nav class="navbar sticky top-0 z-50 bg-white/10 backdrop-blur-md">
@@ -18,7 +19,7 @@
       >
         <!-- Logo -->
         <div class="text-xl font-bold">
-          <a href="#"
+          <a href="#hero"
             ><button class="bg-white/70 shadow-lg py-1 px-4 rounded-full">
               <img src="assets/404.svg" class="size-5" alt="" /></button
           ></a>
@@ -50,7 +51,7 @@
           class="hidden md:flex space-x-8 bg-white/20 backdrop-blur-md shadow-lg px-8 py-2 rounded-full"
         >
           <a
-            href="#"
+            href="#hero"
             class="hover:text-gray-600 font-bold text-black hover:underline hover:decoration-orange-700 hover:decoration-4"
             >Home</a
           >
@@ -105,7 +106,7 @@
         class="hidden md:hidden backdrop-blur-md overflow-hidden transition-all duration-300 ease-in-out"
       >
         <a
-          href="#"
+          href="#hero"
           class="block px-4 py-2 backdrop-blur-md hover:bg-gray-200 font-bold hover:underline hover:decoration-orange-700 hover:decoration-4"
           >Home</a
         >
@@ -139,7 +140,10 @@
     <!-- End Navbar -->
 
     <!-- Hero -->
-    <div class="hero-section flex mx-auto max-w-screen-2xl px-4 pt-20">
+    <div
+      id="hero"
+      class="hero-section flex mx-auto max-w-screen-2xl px-4 pt-20"
+    >
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="col-span-1 place-content-center order-last sm:order-first">
           <h2 class="font-extrabold text-xl sm:text-2xl text-4xl py-8 sm:py-4">
@@ -359,7 +363,7 @@
     <!-- End Service -->
 
     <!-- About -->
-    <div class="-mb-6 xl:-mb-24">
+    <div class="-mb-5 xl:-mb-24">
       <img src="assets/wave2.svg" alt="" />
     </div>
     <div id="about" class="mb-10 bg-orange-400">
